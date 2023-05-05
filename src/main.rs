@@ -1,10 +1,11 @@
 mod cpu;
-mod memory;
 mod registers;
+mod flags;
 mod ops;
 
 use crate::cpu::Cpu;
 
 fn main() {
-    println!("Hello, world!");
+    let mut cpu = Cpu::new();
+    cpu.cycle();
 }
